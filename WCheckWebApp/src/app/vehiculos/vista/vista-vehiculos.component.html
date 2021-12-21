@@ -1,0 +1,50 @@
+<div class="HorizontalBar">
+    <img src="../assets/images/atras.png" class="imageAtras" (click)="atras()">
+    <label class="lblTitulo">Mis Carros</label>
+    <img src="../assets/images/Mas.png" class="imgMas" (click)="AgregarVehiculo()">
+    <div class="imageContainer">
+        <img src="../assets/images/Logo.png" class="imageLogo">
+    </div>
+</div>
+
+<div class="ContenedorPrincipal">
+    <div class="ContainerFilters" *ngIf="visible">
+        <label class="lblFiltro">Filtros:</label>
+        <table style="width:100%">
+
+
+            <tr><th><label>Marca:</label></th>
+            <th><input type="text"></th></tr>
+            
+            <tr><th><label>Estado:</label></th>
+            <th><input type="text"></th></tr>
+            
+            <tr><th><label>Placa:</label></th>
+            <th><input type="text"></th></tr>
+            </table>
+            <button class="btnBuscar">Buscar</button>
+    </div>
+    
+    <div class="ContainerVehiculos">
+        <div class="tarjetaContainer" *ngFor="let car of lst_cars">
+            <img src="../assets/images/Auto1.png" class="imgAuto"/>               
+            <div class="tarjetaDetalle">
+                <label><b>Detalles:</b></label>
+                <div class="horizontal">
+                    <label><b>Marca:</b></label>
+                    <label>{{car.Marca}}</label>
+                </div>
+                <div class="horizontal">
+                    <label><b>Modelo:</b></label>
+                    <label>{{car.Modelo}}</label>
+                </div>
+                <div class="horizontal">
+                    <label><b>Año:</b></label>
+                    <label>{{car.Year}}</label>
+                </div>
+            </div>
+            <button class="btnCitas" (click)="btnVerCita_Clicked(car)">Ver Citas</button>
+        </div>
+    </div>   
+</div>
+    

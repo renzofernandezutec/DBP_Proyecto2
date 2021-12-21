@@ -1,0 +1,140 @@
+.HorizontalBar{
+    background-color: rgb(226, 226, 226);
+    display: flex;
+    width: 100%;
+    height: auto;
+    border: 0px;
+}
+.lblTitulo{
+    font-size:30px;
+    display: flex; 
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 25px;
+}
+.imageContainer{
+    display: inline-block;
+    width: 80%;
+    text-align: right;
+}
+.imageLogo{
+    width: auto;
+    height: 70px;
+    margin: 10px;
+}
+.imageAtras{
+    width: auto;
+    height: 50px;
+    margin: 10px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.imgMas{
+    width: auto;
+    height: 40px;
+    margin-top: 30px;
+}
+
+.ContenedorPrincipal{
+    display: flex;
+    background-color: rgb(226, 226, 226);
+}
+
+.ContainerFilters{
+    background-color:white;
+    height: 300px;
+    width:30%;
+    margin: 5px;
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+}
+.lblFiltro{
+    font-size:20px;
+    font-weight:bold;
+    margin-left:5px;
+}
+.btnBuscar{
+   float: right;
+   margin-right: 15px;
+   margin-top:5px;
+   background-color: black;
+   color: white;
+   border: none;
+   cursor: pointer;
+   height:30px;
+   border-radius: 5px;
+   width: 70px;
+}
+
+.ContainerCitas{
+    background-color:white;
+    width:100%;
+    margin: 5px;
+    padding:10px;
+}
+.horizontal{
+    display:flex;
+    margin: 5px;
+}
+
+.derecha{
+    display: inline-block;
+    text-align: right;
+}
+
+.tarjetaContainer{
+    border: 2px black solid;
+    width: 340px;
+    border: 2px black solid;
+    border-radius: 5px;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 10px;
+    background-color:#52AF9D;
+}
+.divTarjetaCabecera{
+    height:auto;
+    width:100%;
+    padding: 0px;
+}
+.lblCabcera{
+    color: white;
+    align-items: center;
+    display:flex;
+}
+.divTarjetaDetalle{
+    background-color:white;
+    height:auto;
+    display:flex;
+}
+.imgAuto{
+    width: auto;
+    height: 90px;
+    margin: 10px;
+}
+
+.tarjetaDetalle{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.btnDetalle{
+    height:30px;
+    background-color: #52AF9D;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width:100px;
+    float: right;
+}
+.divBotones{
+    width: auto;
+    display: grid;
+    text-align: right;
+    float: right;
+    margin-top: 10px;
+}

@@ -1,0 +1,56 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>Citas</ion-title> 
+      <ion-icon name="add" slot="secondary" class="btnExit" (click)="btnNuevo()"></ion-icon>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="vehiculos"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+    <ion-list  *ngFor="let cita of citas">
+ <div class="ContainerCitas">
+        <div class="tarjetaContainer" > 
+            <div class="divTarjetaCabecera">
+                <div class="horizontal">
+                    <ion-label class="lblCabcera"><b>Numero:</b></ion-label>
+                    <label class="lblCabcera">{{cita.IdCita}}</label>
+                    <div style="width:100%; text-align:right;">
+                        <img src="../assets/img/doc.png" style="height: 30px; margin: 0px;"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divTarjetaDetalle">
+            <div style="width:60%">
+                <div class="horizontal">
+                    <label><b>Fecha: </b></label>
+                    <label>{{cita.Fecha}}</label>
+                </div>
+            
+                <div class="horizontal">
+                    <label><b>Hora: </b></label>
+                    <label>{{cita.Hora}}</label>
+                </div>
+
+                <div class="horizontal">
+                    <label><b>Reason: </b></label>
+                    <label>{{cita.Motivo}}</label>
+                </div>
+
+                <div class="horizontal">
+                    <label><b>Sede: </b></label>
+                    <label>{{cita.Sede}}</label>
+                </div>
+                
+            </div>
+            <div class="divBotones">
+                <!-- <button class="btnDetalle">Modificar Cita</button> -->
+                <button class="btnDetalle" [routerLink]="['/anular/',cita.IdCita]">Anular Cita</button>
+            </div>
+            </div>
+            </div> 
+            </div>
+        </ion-list>
+</ion-content>

@@ -1,0 +1,63 @@
+.btnExit{
+    margin-right: 10px;
+    zoom: 1.5;
+    cursor: pointer;
+}
+
+
+form {
+    background-color: white;
+    width: 350px;
+    margin: 0;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #52AF9D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 120px 10;
+  }
+  
+  .lblTitulo{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
+  .regresar{
+      margin-top:10px;
+      display: inline-block;
+      width: 100%;
+      text-align: right;
+      cursor: pointer;
+  }
+  

@@ -1,0 +1,32 @@
+.btnExit{
+    margin-right: 10px;
+    zoom: 1.5;
+    cursor: pointer;
+}
+.img-auto{
+    width: 100%;
+}
+
+.tarjetaContainer{
+    border: 2px black solid;
+    width: 500px;
+    height: 100px;
+    display: flex;
+    margin: 10px;
+}
+
+.imgAuto{
+    width: auto;
+    height: 90px;
+    margin: 10px;
+}
+
+.btnCitas{
+    height:30px;
+    margin-top: 10px;
+    background-color: #52AF9D;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}

@@ -1,0 +1,16 @@
+<form class="containerPrincipal">
+    <div class="imgcontainer">
+      <label class="lblTitulo">Nueva Cita</label>
+    </div>
+  
+    <div class="container" style="   position: absolute;
+    top: 50%;">
+      <input type="text" [(ngModel)]="fecha" placeholder="Ingresar Fecha" [ngModelOptions]="{standalone: true}">
+      <input type="text" [(ngModel)]="hora" placeholder="Ingresar Hora" [ngModelOptions]="{standalone: true}">
+      <input type="text" [(ngModel)]="motivo" placeholder="Ingresar Motivo" [ngModelOptions]="{standalone: true}">       
+      <input type="text" [(ngModel)]="sede" placeholder="Ingresar Sede" [ngModelOptions]="{standalone: true}">      
+      <button type="submit" (click)="CrearCita()">Crear Cita</button>
+
+      <label class="regresar" (click)="regresar()"><b>Regresar</b></label>
+    </div>
+  </form>

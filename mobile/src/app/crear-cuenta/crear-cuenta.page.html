@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Nueva Cuenta</ion-title> 
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="login"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <form class="containerPrincipal">
+    <div class="imgcontainer">
+      <label class="lblTitulo">Registrate</label>
+    </div>
+  
+    <div class="container">
+      <input type="text" [(ngModel)]="nombre" placeholder="Ingresar Nombre" [ngModelOptions]="{standalone: true}">
+      <input type="text" [(ngModel)]="numeroDocumento" placeholder="Ingresar # Documento" [ngModelOptions]="{standalone: true}">
+      <input type="text" [(ngModel)]="telefono" placeholder="Ingresar Telefono" [ngModelOptions]="{standalone: true}">
+      <input type="text" [(ngModel)]="usuario" placeholder="Ingresar Usuario" [ngModelOptions]="{standalone: true}">
+      <input type="password" [(ngModel)]="clave1" placeholder="Ingresar Contraseña" [ngModelOptions]="{standalone: true}">
+      <input type="password" [(ngModel)]="clave2" placeholder="Confirmar Contraseña" [ngModelOptions]="{standalone: true}">
+  
+      <button type="button" (click)="CrearCuenta()">Crear Cuenta</button>
+
+      <label class="regresar" [routerLink]="['/login/']"><b>Regresar</b></label>
+    </div>
+  </form>
+
+</ion-content>

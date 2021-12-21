@@ -1,0 +1,25 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content style=" background-color: #52AF9D;">
+<div class="divPrincipal">
+  <img src="assets/img/logo.png" style="background-color: white; width: 300px;">
+  <div class="divHorizontal">
+    <ion-label style="margin-right: 10px;"><b>Username</b></ion-label>
+    <input [(ngModel)]="username" type="text" placeholder="Enter Username">
+  </div>
+  
+  <div class="divHorizontal">
+    <ion-label style="margin-right: 10px;"><b>Password </b></ion-label>
+    <input  [(ngModel)]="password" type="password" placeholder="Enter Password">
+  </div>  
+  <button type="button" (click)="login()">Login</button>
+
+    <div style="display: flex;">
+        <label class="crearCuenta" [routerLink]="['/crear-cuenta/']"><b>Crear Cuenta</b></label>
+    </div>
+</div>
+</ion-content>

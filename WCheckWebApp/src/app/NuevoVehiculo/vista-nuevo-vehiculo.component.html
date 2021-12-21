@@ -1,0 +1,14 @@
+<form class="containerPrincipal">
+    <div class="imgcontainer">
+        <label class="lblTitulo">Nuevo Vehiculo</label>
+    </div>
+    
+    <div class="container">
+        <input type="text" [(ngModel)]="marca" placeholder="Ingresar Marca"  [ngModelOptions]="{standalone: true}">
+        <input type="text" [(ngModel)]="modelo" placeholder="Ingresar Modelo"  [ngModelOptions]="{standalone: true}">
+        <input type="text" [(ngModel)]="year" placeholder="Ingresar Año"  [ngModelOptions]="{standalone: true}">      
+        <button type="submit" (click)="crearVehiculo()">Agregar Vehiculo</button>
+
+        <label class="regresar" (click)="regresar()"><b>Regresar</b></label>
+    </div>
+</form>

@@ -1,0 +1,43 @@
+
+form {
+    background-color: white;
+    border: 3px solid black;
+    width: 700px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  button {
+    background-color: #52AF9D;
+    color: white;   
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    width: 120px;
+    height: 60px;
+    margin: 0 auto;
+}
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  .lblTitulo{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .container {
+    padding: 16px;
+    display: flex;
+  }
+  

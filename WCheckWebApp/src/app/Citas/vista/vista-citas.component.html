@@ -1,0 +1,52 @@
+<div class="HorizontalBar">
+    <img src="../assets/images/atras.png" class="imageAtras" (click)="atras()">
+    <label class="lblTitulo">Mis Citas</label>
+    <img src="../assets/images/Mas.png" class="imgMas" (click)="AgregarCita()">
+    <div class="imageContainer">
+        <img src="../assets/images/Logo.png" class="imageLogo">
+    </div>
+</div>
+
+<div class="ContenedorPrincipal">    
+    <div class="ContainerCitas">
+        <div class="tarjetaContainer" *ngFor="let cita of lst_Citas"> 
+            <div class="divTarjetaCabecera">
+                <div class="horizontal">
+                    <label class="lblCabcera"><b>Numero:</b></label>
+                    <label class="lblCabcera">{{cita.IdCita}}</label>
+                    <div style="width:100%; text-align:right;">
+                        <img src="../assets/images/doc.png" style="height: 30px; margin: 0px;"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divTarjetaDetalle">
+            <div style="width:60%">
+                <div class="horizontal">
+                    <label><b>Fecha: </b></label>
+                    <label>{{cita.Fecha}}</label>
+                </div>
+            
+                <div class="horizontal">
+                    <label><b>Hora: </b></label>
+                    <label>{{cita.Hora}}</label>
+                </div>
+
+                <div class="horizontal">
+                    <label><b>Reason: </b></label>
+                    <label>{{cita.Motivo}}</label>
+                </div>
+
+                <div class="horizontal">
+                    <label><b>Sede: </b></label>
+                    <label>{{cita.Sede}}</label>
+                </div>
+                
+            </div>
+            <div class="divBotones">
+                <!-- <button class="btnDetalle">Modificar Cita</button> -->
+                <button class="btnDetalle" (click)="BtnAnular(cita)">Anular Cita</button>
+            </div>
+            </div>
+            
+            </div>

@@ -1,0 +1,19 @@
+<form class="containerPrincipal">
+        <div class="imgcontainer">
+            <img src="../assets/images/Logo.png" class="logo">
+        </div>
+        
+        <div class="container">
+            <label><b>Username</b></label>
+            <input [(ngModel)]="username" type="text" placeholder="Enter Username"  [ngModelOptions]="{standalone: true}">
+        
+            <label><b>Password</b></label>
+            <input [(ngModel)]="password" type="password" placeholder="Enter Password"  [ngModelOptions]="{standalone: true}">
+        
+            <button type="button" (click)="login()">Login</button>
+            <div style="display: flex;">
+                <label (click)="CambiarClave()" style="cursor: pointer;"><b>Cambiar Contraseña</b></label>
+                <label class="crearCuenta" (click)="Registrarse()"><b>Crear Cuenta</b></label>
+            </div>
+        </div>
+</form>

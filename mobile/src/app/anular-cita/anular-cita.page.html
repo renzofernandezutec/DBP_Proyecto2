@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Anular Cita</ion-title> 
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="vehiculos"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="containerPrincipal">
+    <div class="imgcontainer">
+      <label class="lblTitulo">¿Seguro que deseas anular la cita?</label>
+    </div>
+  
+    <div class="container">
+      <button type="button" (click)="anular()" ><b>Si, Anular</b></button>
+      <button [routerLink]="['/vehiculos/']"><b>No, Regresar</b></button>
+    </div>
+  </div>
+</ion-content>
