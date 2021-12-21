@@ -10,11 +10,9 @@
 1. Login
 2. Citas
 3. Vehiculos
-4. Nuevo vehiculo
-5. Nueva cita
-6. Cambiar clave
-7. Anular Cita
-8. registro
+4. Nueva cita
+5. Anular Cita
+6. registro
  
  ### Renzo Fernandez: 
  [Renzo Fernandez](https://github.com/renzofernandezutec).
